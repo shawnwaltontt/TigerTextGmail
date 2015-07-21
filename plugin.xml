@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Hello World"
-    description="Matches and echoes 'Hello World' string in emails"
+  <ModulePrefs title="TigerText Gmail"
+    description="Description"
     height="20"
     author="Shawn W and Will Y"
     author_email="..."
-    author_location="Mountain View, CA">
+    author_location="Santa Monica, CA">
 
     <!-- Declare feature dependencies. -->
 
@@ -24,7 +24,7 @@
      in the manifest, but is still expected to be present. -->
     <Require feature="google.contentmatch">
       <Param name="extractors">
-        google.com:SenderEmailExtractor
+        google.com:SenderEmailExtractor, google.com:RecipientToEmailExtractor
       </Param>
     </Require>
 
@@ -34,8 +34,6 @@
    "html" and "card" are required for all Gmail contextual gadgets. -->
   <Content type="html" view="card">
     <![CDATA[
-      <!-- Start with Single Sign-On -->
-      <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script>
       <script type="text/javascript">
 
         <!-- Fetch the array of content matches. -->
