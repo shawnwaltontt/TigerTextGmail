@@ -26,6 +26,14 @@
       <Param name="extractors">
         google.com:SenderEmailExtractor, google.com:RecipientToEmailExtractor
       </Param>
+      <Extension id="from" type="contextExtractor">
+        <Name>Email Sender</Name>
+        <Url>google.com:SenderEmailExtractor</Url>
+        <Param name="sender_email" value=".*"/>
+        <Triggers ref="sender"/>
+        <Scope ref="senderScope"/>
+        <Container name="mail"/>
+      </Extension>
     </Require>
 
   </ModulePrefs>
