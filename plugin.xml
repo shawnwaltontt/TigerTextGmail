@@ -62,6 +62,9 @@
         document.body.appendChild(matchList);
         gadgets.window.adjustHeight(100);
       </script>
+      <div>
+        Hello!
+      </div>
     ]]>
   </Content>
 </Module>
